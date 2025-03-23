@@ -10,4 +10,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [...[tailwindcss()]],
   },
+  hooks: {
+    "prerender:routes": async ({ routes }) => {
+      // for spa need to remove other routes - https://nuxt.com/docs/guide/concepts/rendering
+      routes.clear();
+    },
+  },
 });
