@@ -8,6 +8,7 @@
 </template>
 
 <script setup>
+
 // Add any script logic here if needed
 </script>
 
